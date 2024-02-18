@@ -14,24 +14,33 @@
   <body>
     <div class="title">Etch-a-sketch</div>
 
-    <div class="pad">
-      <div class="controlPanel">
-        <div class="colorMode"></div>
-        <div class="rainbowMode"></div>
-        <div class="eraser"></div>
-        <div class="clearButton"></div>
-        <div class="size"></div>
+    <div class="box">
+      <div class="pad">
+        <div>
+          <label for="colorPicker">Choose a color:</label>
+          <input type="color" id="colorPicker" />
+        </div>
+        <div class="mode">Color</div>
+        <button class="button colorMode" data-text="Color Mode">1</button>
+        <button class="button rainbowMode" data-text="Rainbow Mode">2</button>
+        <button class="button eraser" data-text="Eraser">3</button>
+        <button class="button clearButton" data-text="Clear">4</button>
+        <label for="size">Grid size:</label>
+        <input type="range" min="0" max="200" value="16" class="size" />
       </div>
       <div class="grid"></div>
     </div>
 
     <div class="footer">
       <div>Copyright © 2023 Joki</div>
-      <a href="https://github.com/Joki004" target="_blank" class="gitLogo"
+      <a
+        href="https://github.com/Joki004"
+        rel="noopener noreferrer"
+        target="_blank"
+        class="gitLogo"
         ><i class="bx bxl-github bx-spin-hover bx-md"></i
       ></a>
     </div>
-
     <script src="./js/script.js"></script>
   </body>
 </html>
